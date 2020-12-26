@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: montserrat;
+        }
+        #screen{
+            width: 100%;
+            border: solid 2px;
+            height: 20%;
+            border-radius: 2% ;
+            border-color: rgb(179, 177, 177);
+        }
+        #button{
+            text-align: center;
+            margin: 10%;
+        }
+
+
+        
+        #textbox-items{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen"></div>
+
+    <div id="button">
+        <button onclick="color('red')">red</button>
+        <button onclick="color('green')">green</button>
+        <button onclick="color('blue')">blue</button>
+        <button onclick="color('orange')">orange</button>
+    </div>
+
+    <div id="textbox-items">
+        <input type="text" name="textbox" id="input">
+        <button onclick="display()">YES</button>
+        <h2 id='print'></h2>
+    </div>
+
+    <script>
+        function color(color){
+            document.getElementById('screen').style.background=color
+        }
+        function display(){
+            let text = document.getElementById("input").value
+            document.getElementById('print').innerHTML=text
+        }
+    </script>
+</body>
+</html>
