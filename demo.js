@@ -27,7 +27,7 @@ function addNumber(num1, num2){
 }
 
 addNumber(1,2)
-addNumber("enth",6)
-addNumber("Enth", " myranaada??")
+addNumber("Number",6)
+addNumber("Hello", "\tworld??")
 
 console.log("test")
